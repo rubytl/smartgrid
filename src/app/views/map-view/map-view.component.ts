@@ -30,8 +30,13 @@ export class MapViewComponent implements OnInit, OnDestroy {
     }
 
     ngOnDestroy() {
-        this.selectSiteSub.unsubscribe();
-        this.sitesSub.unsubscribe();
+        if (this.selectSiteSub) {
+            this.selectSiteSub.unsubscribe();
+        }
+
+        if (this.sitesSub) {
+            this.sitesSub.unsubscribe();
+        }
     }
 
     initMap() {
@@ -72,6 +77,10 @@ export class MapViewComponent implements OnInit, OnDestroy {
             this.ngRedux.select(state => state.sites)
                 .subscribe(
                 (sites) => {
+                    if (sites.length === 0) {
+                        return;
+                    }
+
                     sites[0].children.forEach(element => {
                         this.createSiteMarker(element);
                     });

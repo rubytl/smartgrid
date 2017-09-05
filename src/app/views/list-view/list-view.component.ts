@@ -30,8 +30,13 @@ export class ListViewComponent implements OnInit, OnDestroy {
 
     ngOnDestroy() {
         // prevent memory leak when component destroyed
-        this.selectSiteSub.unsubscribe();
-        this.lvServiceSub.unsubscribe();
+        if (this.selectSiteSub) {
+            this.selectSiteSub.unsubscribe();
+        }
+
+        if (this.lvServiceSub) {
+            this.lvServiceSub.unsubscribe();
+        }
     }
 
     getAllSiteListView() {
