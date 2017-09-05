@@ -8,7 +8,7 @@ import { SimpleLayoutComponent } from './layouts/simple-layout.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'smartgrid',
     pathMatch: 'full',
   },
   {
@@ -33,6 +33,14 @@ export const routes: Routes = [
       {
         path: 'charts',
         loadChildren: './views/chartjs/chartjs.module#ChartJSModule'
+      },
+      {
+        path: 'smartgrid',
+        loadChildren: './views/smartgrid/smartgrid.module#SmartgridModule'
+      },
+      {
+        path: 'multigrid',
+        loadChildren: './views/multigrid/multigrid.module#MultigridModule'
       }
     ]
   },

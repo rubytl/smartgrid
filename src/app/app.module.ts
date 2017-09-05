@@ -12,6 +12,7 @@ import { FullLayoutModule } from './layouts/full-layout.module';
 import { RestrictedSiteApiService } from './services/restricted-site.service';
 
 import { ACTION_PROVIDERS } from './actions';
+import { MultigridComponent } from './views/multigrid/multigrid.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { ACTION_PROVIDERS } from './actions';
   ],
   declarations: [
     AppComponent,
+    MultigridComponent,
   ],
   providers: [
     {
