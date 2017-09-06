@@ -17,7 +17,7 @@ import { ACTION_PROVIDERS } from './actions';
   imports: [
     AppRoutingModule,
     NgReduxModule,
-    FullLayoutModule
+    FullLayoutModule,
   ],
   declarations: [
     AppComponent,

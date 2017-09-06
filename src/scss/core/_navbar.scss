@@ -4,7 +4,7 @@
   height: $navbar-height;
   margin: 0;
   padding: 0;
-  background-color: $navbar-bg;
+  background-color: $navbar-bg;  
   @include borders($navbar-border);
 
   .navbar-brand {
@@ -19,6 +19,7 @@
     background-position: center center;
     background-size: $navbar-brand-logo-size;
     @include borders($navbar-brand-border);
+    background-color: #000;
   }
 
   .navbar-nav {
@@ -41,6 +42,7 @@
       padding-bottom: 0;
       border: 0;
       background: 0;
+      color: #fff;
 
       .badge {
         position: absolute;

@@ -1,0 +1,28 @@
+<div class="animated fadeIn">
+    <div class="card-columns cols-2">
+      <div class="card">
+        <div class="card-header">
+          Line Chart
+          <div class="card-actions">
+            <a href="http://www.chartjs.org">
+              <small class="text-muted">docs</small>
+            </a>
+          </div>
+        </div>
+        <div class="card-block">
+          <div class="chart-wrapper">
+            <canvas baseChart class="chart"
+            [datasets]="line5ChartData"
+            [labels]="line5ChartLabels"
+            [options]="line5ChartOptions"
+            [colors]="line5ChartColours"
+            [legend]="line5ChartLegend"
+            [chartType]="line5ChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
