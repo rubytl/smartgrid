@@ -3,11 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { SolarComponent } from './solar/solar.component';
 import { WindComponent } from "./wind/wind.component";
+import { SmartgridComponent } from "./smartgrid.component";
 
 const routes: Routes = [
   {
     path: '',
-    // component: SolarComponent,
+    // component: SmartgridComponent,
     data: {
       title: 'Smartgrid'
     },
@@ -18,14 +19,14 @@ const routes: Routes = [
         data: {
           title: 'Solar'
         }
-      }, 
+      },
       {
         path: 'wind',
         component: WindComponent,
         data: {
           title: 'Wind'
         }
-      }      
+      }
     ]
   }
 ];
