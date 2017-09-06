@@ -3,10 +3,9 @@ import { NgRedux, select } from 'ng2-redux';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
-import { Site } from '../../models/site';
-import { SiteMap } from './map-view';
-import { SiteActions } from '../../actions/site.actions';
-import { IAppState } from '../../store';
+import { Site, SiteMap } from '../../../models';
+import { SiteActions } from '../../../actions';
+import { IAppState } from '../../../store';
 
 declare var google: any;
 

@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { MultigridComponent } from './multigrid.component';
 
 describe('MultigridComponent', () => {
@@ -8,9 +8,10 @@ describe('MultigridComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MultigridComponent ]
+      imports: [ChartsModule],
+      declarations: [MultigridComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import persistState from 'redux-localstorage';
 import { siteReducer } from './site.reducer';
 import { selectedSiteReducer } from './select-site.reducer';
-import { Site } from '../models/site';
+import { Site } from '../models';
 
 export class IAppState {
     sites?: Array<any>;

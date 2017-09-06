@@ -3,9 +3,9 @@ import { NgRedux, select } from 'ng2-redux';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 
-import { ListView, Site } from '../../models';
-import { ListViewApiService } from '../../services/list-view.service';
-import { IAppState } from '../../store';
+import { ListView, Site } from '../../../models';
+import { ListViewApiService } from '../../../services/list-view.service';
+import { IAppState } from '../../../store';
 
 @Component({
     selector: 'list-view',
