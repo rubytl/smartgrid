@@ -1,10 +1,10 @@
-import { CoreUIPage } from './app.po';
+import { SmartGridPage } from './app.po';
 
 describe('core-ui App', function() {
-  let page: CoreUIPage;
+  let page: SmartGridPage;
 
   beforeEach(() => {
-    page = new CoreUIPage();
+    page = new SmartGridPage();
   });
 
   it('should display message saying app works', () => {

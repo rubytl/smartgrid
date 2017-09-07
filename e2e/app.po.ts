@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor/globals';
 
-export class CoreUIPage {
+export class SmartGridPage {
   navigateTo() {
     return browser.get('/');
   }

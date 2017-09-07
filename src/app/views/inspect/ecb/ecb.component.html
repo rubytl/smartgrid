@@ -1,0 +1,80 @@
+<div class="animated fadeIn">
+  <div class="card-container">
+    <div class="card-full">
+      <div class="card">
+        <div class="card-header">
+          ECB Run Time
+        </div>
+        <div class="card-block">
+          <div class="chart-wrapper">
+            <canvas baseChart class="chart" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [legend]="lineChartLegend"
+              [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+            </canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          AirCon Run Time
+        </div>
+        <div class="card-block">
+          <div class="chart-wrapper">
+            <canvas baseChart class="chart" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [legend]="lineChartLegend"
+              [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-right">
+      <div class="card">
+        Rect. capacity
+      </div>
+
+      <div class="card">
+        Zoom:
+      </div>
+
+      <!-- Time frame -->
+      <div class="card">
+        <div class="card-header">
+          Select time frame:
+        </div>
+
+        <div class="card-block">
+          <form action="">
+            <input type="radio" checked="true" name="gender" value="male">Last 30 days<br>
+            <input type="radio" name="gender" value="female">Last 30 weeks<br>
+            <input type="radio" name="gender" value="other">Last 30 months
+          </form>
+        </div>
+      </div>
+
+      <!-- Compare type -->
+      <div class="card">
+        <div class="card-header">
+          Select group compare type:
+        </div>
+        <div class="card-block">
+          <input type="radio" checked="true" name="gender" value="male">Group Summary<br>
+          <input type="radio" name="gender" value="female">Group Average
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="card">
+        <div class="card-header">
+          <button type="button"><i class="icon-refresh"></i>
+              </button>
+          <button type="button"><i class="fa fa-floppy-o"></i>
+              </button>
+          <button type="button"><i class="icon-printer"></i>
+              </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

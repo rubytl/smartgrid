@@ -1,0 +1,16 @@
+.card-container
+{
+    display: flex;
+    flex-direction:row;
+}
+
+.card-full
+{
+    margin-top: 0;
+}
+
+.card-right {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: -10px;
+}
