@@ -31,3 +31,6 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+/.vs/Angular-MSMClient/v15/.suo
+/.vs/config/applicationhost.config
+/Angular-MSMClient.sln
