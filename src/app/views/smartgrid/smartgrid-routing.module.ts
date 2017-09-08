@@ -8,7 +8,7 @@ import { SmartgridComponent } from "./smartgrid.component";
 const routes: Routes = [
   {
     path: '',
-    // component: SmartgridComponent,
+    component: SmartgridComponent,
     data: {
       title: 'Smartgrid'
     },

@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { EcbComponent } from './ecb/ecb.component';
+import { InspectComponent } from './inspect.component';
 
 const routes: Routes = [
   {
     path: '',
+    component: InspectComponent,
     data: {
       title: 'Inspect'
     },
