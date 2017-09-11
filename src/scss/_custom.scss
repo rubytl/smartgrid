@@ -1,1 +1,17 @@
 // Here you can add other styles
+.card-container
+{
+    display: flex;
+    flex-direction:row;
+}
+
+.card-full
+{
+    margin-top: 0;
+}
+
+.card-right {
+    margin-top: 0;
+    margin-left: $grid-gutter-width-base - 10px;
+    margin-right: -($grid-gutter-width-base - 10px);
+}

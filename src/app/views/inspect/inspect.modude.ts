@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 
-import { EcbComponent, InspectRoutingModule, InspectComponent } from '.';
+import {
+  EcbComponent, InspectRoutingModule,
+  InspectComponent, EnergySingleComponent,
+  TimeframeComponent,ComparetypeComponent,
+  ActionComponent
+} from '.';
 
 @NgModule({
   imports: [
@@ -10,7 +15,11 @@ import { EcbComponent, InspectRoutingModule, InspectComponent } from '.';
   ],
   declarations: [
     EcbComponent,
-    InspectComponent
+    InspectComponent,
+    EnergySingleComponent,
+    TimeframeComponent,
+    ComparetypeComponent,
+    ActionComponent
   ]
 })
 export class InspectModule { }

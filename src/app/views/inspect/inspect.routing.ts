@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { EcbComponent } from './ecb/ecb.component';
 import { InspectComponent } from './inspect.component';
+import { EnergySingleComponent } from './energy/energy.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,14 @@ const routes: Routes = [
         path: 'ecb',
         component: EcbComponent,
         data: {
-          title: 'Ecb'
+          title: 'ECB'
+        }
+      },
+      {
+        path: 'energy',
+        component: EnergySingleComponent,
+        data: {
+          title: 'Energy trend'
         }
       }
     ]

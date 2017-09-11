@@ -38,43 +38,14 @@
       </div>
 
       <!-- Time frame -->
-      <div class="card">
-        <div class="card-header">
-          Select time frame:
-        </div>
-
-        <div class="card-block">
-          <form action="">
-            <input type="radio" checked="true" name="gender" value="male">Last 30 days<br>
-            <input type="radio" name="gender" value="female">Last 30 weeks<br>
-            <input type="radio" name="gender" value="other">Last 30 months
-          </form>
-        </div>
-      </div>
+      <app-timeframe></app-timeframe>
 
       <!-- Compare type -->
-      <div class="card">
-        <div class="card-header">
-          Select group compare type:
-        </div>
-        <div class="card-block">
-          <input type="radio" checked="true" name="gender" value="male">Group Summary<br>
-          <input type="radio" name="gender" value="female">Group Average
-        </div>
-      </div>
+      <app-comparetype></app-comparetype>
 
       <!-- Actions -->
-      <div class="card">
-        <div class="card-header">
-          <button type="button"><i class="icon-refresh"></i>
-              </button>
-          <button type="button"><i class="fa fa-floppy-o"></i>
-              </button>
-          <button type="button"><i class="icon-printer"></i>
-              </button>
-        </div>
-      </div>
-
+      <app-action></app-action>
     </div>
+
   </div>
 </div>
