@@ -24,8 +24,8 @@ export const routes: Routes = [
         loadChildren: './views/dashboard/dashboard.module#DashboardModule'
       },
       {
-        path: 'icons',
-        loadChildren: './views/icons/icons.module#IconsModule'
+        path: 'inspect',
+        loadChildren: './views/inspect/inspect.modude#InspectModule'
       },
       {
         path: 'widgets',
