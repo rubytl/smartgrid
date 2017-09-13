@@ -10,7 +10,7 @@ const routes: Routes = [
     path: '',
     component: SmartgridComponent,
     data: {
-      title: 'Smartgrid'
+      // title: 'Smartgrid'
     },
     children: [
       {

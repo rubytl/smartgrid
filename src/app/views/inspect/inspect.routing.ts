@@ -10,7 +10,7 @@ const routes: Routes = [
     path: '',
     component: InspectComponent,
     data: {
-      title: 'Inspect'
+      // title: 'Inspect'
     },
     children: [
       {
