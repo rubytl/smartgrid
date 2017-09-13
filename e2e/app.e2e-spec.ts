@@ -1,14 +1,13 @@
 import { SmartGridPage } from './app.po';
 
-describe('core-ui App', function() {
+describe('SmartGrid App', function() {
   let page: SmartGridPage;
 
   beforeEach(() => {
     page = new SmartGridPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should open the app successfully', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
