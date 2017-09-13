@@ -1,20 +1,32 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
-import { EnergyComponent } from './energy.component';
+import { EnergySingleComponent } from './energy.component';
+import {
+  TimeframeComponent, ComparetypeComponent,
+  ActionComponent
+} from '..';
 
-describe('EnergyComponent', () => {
-  let component: EnergyComponent;
-  let fixture: ComponentFixture<EnergyComponent>;
+
+describe('EnergySingleComponent', () => {
+  let component: EnergySingleComponent;
+  let fixture: ComponentFixture<EnergySingleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EnergyComponent ]
+      imports: [ChartsModule],
+      declarations: [
+        EnergySingleComponent,
+        TimeframeComponent,
+        ComparetypeComponent,
+        ActionComponent
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EnergyComponent);
+    fixture = TestBed.createComponent(EnergySingleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
