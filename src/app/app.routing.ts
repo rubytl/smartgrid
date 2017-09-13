@@ -9,7 +9,7 @@ import { ListviewComponent } from './views/listview/listview.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'smartgrid',
+    redirectTo: 'smartgrid/solar',
     pathMatch: 'full',
   },
   {
